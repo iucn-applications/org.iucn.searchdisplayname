@@ -1,15 +1,16 @@
 # org.iucn.searchdisplayname
 
-![Screenshot](/images/screenshot.png)
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+### CiviCRM Extension
+Allows to search for sort_name **OR display_name** when searching for the contact name. Works both in generic search as well as quick search.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
 * PHP v7.2+
-* CiviCRM (*FIXME: Version number*)
+* CiviCRM 5+
+(Built with this CiviCRM 5.44, PHP 7.2, unknown if it works with other versions)
 
 ## Installation (Web UI)
 
@@ -22,7 +23,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl org.iucn.searchdisplayname@https://github.com/FIXME/org.iucn.searchdisplayname/archive/master.zip
+cv dl org.iucn.searchdisplayname@https://github.com/iucn-applications/org.iucn.searchdisplayname/archive/refs/heads/main.zip
 ```
 
 ## Installation (CLI, Git)
@@ -31,14 +32,14 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/FIXME/org.iucn.searchdisplayname.git
+git clone https://github.com/iucn-applications/org.iucn.searchdisplayname.git
 cv en searchdisplayname
 ```
 
 ## Getting Started
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+Just enable the extension and it should work out of the box.
 
 ## Known Issues
 
-(* FIXME *)
+None for now.
