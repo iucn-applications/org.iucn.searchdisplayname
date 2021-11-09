@@ -2,7 +2,7 @@
 
 
 ### CiviCRM Extension
-Allows to search for sort_name **OR display_name** when searching for the contact name. Works both in generic search as well as quick search.
+Allows to search for **sort_name OR display_name** when searching for the contact name. Works both in generic search as well as quick search.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
@@ -10,6 +10,7 @@ The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 * PHP v7.2+
 * CiviCRM 5+
+
 (Built with this CiviCRM 5.44, PHP 7.2, unknown if it works with other versions)
 
 ## Installation (Web UI)
