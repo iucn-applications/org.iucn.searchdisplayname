@@ -8,7 +8,7 @@ class CRM_Searchdisplayname_Contact_BAO_Search extends CRM_Contact_BAO_Query_Int
    * @var array
    * @static
    */
-  public static $_fields = array();
+  public static $_fields = [];
 
   /**
    * Function get the import/export fields for hrjob

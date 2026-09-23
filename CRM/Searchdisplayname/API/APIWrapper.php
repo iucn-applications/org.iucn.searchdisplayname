@@ -38,12 +38,12 @@ class CRM_Searchdisplayname_API_APIWrapper implements API_Wrapper {
 
     if (strlen($search_term) > 0) {
       // Search for display name
-      $display_name_results = civicrm_api3('Contact', 'get', array(
+      $display_name_results = civicrm_api3('Contact', 'get', [
         'debug' => 1,
         'sequential' => 1,
         'return' => "sort_name, email",
-        'display_name' => array('LIKE' => "%$search_term%"),
-      ));
+        'display_name' => ['LIKE' => "%$search_term%"],
+      ]);
 
       // Compare results by id
       $result_ids = array_column($result['values'],'id');
@@ -57,12 +57,12 @@ class CRM_Searchdisplayname_API_APIWrapper implements API_Wrapper {
       // Add the display name results that weren't found before
       foreach ($display_results_to_add as $key => $id) {
         $api_result = $display_name_results['values'][$key];
-        $result['values'][] = array(
+        $result['values'][] = [
           'id' => $api_result['contact_id'],
           'sort_name' => $api_result['sort_name'],
           'email' => $api_result['email'],
           'data' => $api_result['sort_name'] . " :: " . $api_result['email'],
-        );
+        ];
       }
     }
 
